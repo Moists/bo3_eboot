@@ -74,8 +74,8 @@ namespace bo3_eboot_builder.Classes
 
             if (mod_buffer.vsat != null)
             {
-                buffer = write_bytes(buffer, Constants.vsat_1, (uint)mod_buffer.wallhack);
-                buffer = write_bytes(buffer, Constants.vsat_1, (uint)mod_buffer.wallhack);
+                buffer = write_bytes(buffer, Constants.vsat_1, (uint)mod_buffer.vsat);
+                //you had the vsat buffer twice and forgot to actually make it buffer the vsat, it had wallhack before no wonder people kept getting infinite "working..." :p
             }
 
             if (mod_buffer.fps != null)
